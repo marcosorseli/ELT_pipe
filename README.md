@@ -1,6 +1,6 @@
-# Local Risk Pipeline: DuckDB + dbt
+# DuckDB + dbt pipeline
 
-This is a project I built to explore how `dbt` and DuckDB handle time-series financial math. It is not meant to be a production-ready pipeline, but rather an example of how to push quantitative logic (like rolling volatility and anomaly detection) directly into the SQL layer.
+This is a project I built to explore how `dbt` and DuckDB handle maths. It is not meant to be a production-ready pipeline, but rather an example of how to push quantitative logic (like rolling volatility and anomaly detection) directly into the SQL layer.
 
 
 ## The Stack
