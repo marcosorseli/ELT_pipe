@@ -1,0 +1,18 @@
+
+# dbt
+target/
+dbt_packages/
+logs/
+
+# DuckDB database files
+*.duckdb
+*.duckdb.wal
+
+# Python
+__pycache__/
+*.pyc
+.env
+
+#profiles
+profiles.yml
+.user.yml

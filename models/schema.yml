@@ -1,0 +1,27 @@
+version: 2
+
+models:
+  - name: market_trends
+    description: "Financial risk metrics for NZ property sales"
+    columns:
+      - name: suburb
+        tests:
+          - not_null
+      - name: price
+        tests:
+          - not_null
+      - name: z_score
+        description: "Statistical outlier indicator"
+        tests:
+          - not_null
+  - name: suburb_rolling_volatility
+    description: "Calculates a 3-month rolling average and volatility for property prices by suburb."
+    columns:
+      - name: suburb
+        tests:
+          - not_null
+      - name: sale_month
+        tests:
+          - not_null
+      - name: rolling_3m_avg_price
+        description: "Rolling 3-month average of the median price."
